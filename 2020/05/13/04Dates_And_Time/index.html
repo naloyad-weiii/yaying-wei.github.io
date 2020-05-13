@@ -158,11 +158,76 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >categories</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Master Excel(3) 时间和日期</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                
+                <h2 id="Contents-目录"><a href="#Contents-目录" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul>
+<li><a href="#用DATE(TIME)表示日期(时间)">用DATE(TIME)表示日期(时间)</a></li>
+<li><a href="#日期相关的函数">日期相关的函数</a></li>
+</ul>
+<h2 id="用DATE-TIME-表示日期-时间"><a href="#用DATE-TIME-表示日期-时间" class="headerlink" title="用DATE(TIME)表示日期(时间)"></a>用DATE(TIME)表示日期(时间)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;DATE(Year,Month,Day)</span><br><span class="line">&#x3D;TIME(Hour,Minute,Second)</span><br></pre></td></tr></table></figure>
+<p>在excel里，时间和日期都是正数</p>
+<h2 id="日期相关的函数"><a href="#日期相关的函数" class="headerlink" title="日期相关的函数"></a>日期相关的函数</h2><p>当月末（O）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;EOMONTH(Date,0)</span><br></pre></td></tr></table></figure>
+<p>2个月后的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;EDATE(Date,2)</span><br></pre></td></tr></table></figure>
+<p>返回X个<strong>工作日</strong>后的日期，可指定假期</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;WORKDAY(Start,End[,Holidays])</span><br></pre></td></tr></table></figure>
+<p>计算<strong>两个日期间</strong>的工作日数量，可指定假期</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;NETWORKDAYS(Start,End[,Holidays])</span><br></pre></td></tr></table></figure>
+<p>返回对应于某个日期的一周中的第几天</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;WEEKDAY()</span><br></pre></td></tr></table></figure>
+<p>Weekday 函数的 </p>
+<table>
+<thead>
+<tr>
+<th>Return_type</th>
+<th>返回的数字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1 或省略</td>
+<td>数字 1（星期日）到 7（星期六）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>数字 1（星期一）到 7（星期日）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>数字 0（星期一）到 6（星期日）</td>
+</tr>
+<tr>
+<td>11</td>
+<td>数字 1（星期一）到 7（星期日）</td>
+</tr>
+<tr>
+<td>12</td>
+<td>数字 1（星期二）到数字 7（星期一）</td>
+</tr>
+<tr>
+<td>13</td>
+<td>数字 1（星期三）到数字 7（星期二）</td>
+</tr>
+<tr>
+<td>14</td>
+<td>数字 1（星期四）到数字 7（星期三）</td>
+</tr>
+<tr>
+<td>15</td>
+<td>数字 1（星期五）到数字 7（星期四）</td>
+</tr>
+<tr>
+<td>16</td>
+<td>数字 1（星期六）到数字 7（星期五）</td>
+</tr>
+<tr>
+<td>17</td>
+<td>数字 1（星期日）到 7（星期六）</td>
+</tr>
+</tbody></table>
+
             </div>
 
             <!-- Post Comments -->
@@ -224,8 +289,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/categories/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/categories/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2020/05/13/04Dates_And_Time/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2020/05/13/04Dates_And_Time/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 

@@ -158,11 +158,169 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >categories</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Master Excel(1) 建立和使用名称，固定及非固定单元格</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                
+                <h2 id="Contents-目录"><a href="#Contents-目录" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul>
+<li><a href="#为单元格命名">为单元格命名</a></li>
+<li><a href="#在公式中使用名称">在公式中使用名称</a></li>
+<li><a href="#管理工作簿中的名称">管理工作簿中的名称</a></li>
+<li><a href="#进阶玩法：编辑名称">进阶玩法：编辑名称</a></li>
+</ul>
+<p>在Excel使用中，需要在公式中固定引用单元格位置时可以使用 <code>$</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键 on mac：Command + T</span><br></pre></td></tr></table></figure>
+<p>但是，为了使公式更加容易理解和维护，我们还可以为单元格区域、函数、常量或表格定义名称。</p>
+<h2 id="为单元格或区域命名"><a href="#为单元格或区域命名" class="headerlink" title="为单元格或区域命名"></a>为单元格或区域命名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择单元格或区域</span><br><span class="line">在左上角名称框内输入名称，如<span class="string">"Temp_List"</span></span><br><span class="line">Enter</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="在公式中使用名称"><a href="#在公式中使用名称" class="headerlink" title="在公式中使用名称"></a>在公式中使用名称</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择某单元格，输入公式</span><br><span class="line">在公式中直接使用名称，如<span class="string">"=sum(Temp_List)"</span></span><br><span class="line">Enter</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="管理工作簿中的名称"><a href="#管理工作簿中的名称" class="headerlink" title="管理工作簿中的名称"></a>管理工作簿中的名称</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Ribbon -&gt; Formulas -&gt; Define Name</span><br><span class="line">可以创建、编辑、删除和查找工作簿中使用的所有名称</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="进阶玩法：编辑名称"><a href="#进阶玩法：编辑名称" class="headerlink" title="进阶玩法：编辑名称"></a>进阶玩法：编辑名称</h2><p>当计算区域的格式相同，如起止行或列相同时，重复建立多个名称过于繁琐</p>
+<p>此时可以通过修改名称，接触行或列的固定，高效统计数据</p>
+<h5 id="例1：以下表格统计了8个不同情况下不同价格的营收，计算每个情况下的最优价格（最高营收对应的价格）。如Case-1的最优价格是96-00-€"><a href="#例1：以下表格统计了8个不同情况下不同价格的营收，计算每个情况下的最优价格（最高营收对应的价格）。如Case-1的最优价格是96-00-€" class="headerlink" title="例1：以下表格统计了8个不同情况下不同价格的营收，计算每个情况下的最优价格（最高营收对应的价格）。如Case 1的最优价格是96.00 €"></a>例1：以下表格统计了8个不同情况下不同价格的营收，计算每个情况下的最优价格（最高营收对应的价格）。如Case 1的最优价格是96.00 €</h5><p>(假设表格Selling Price 始于B2）</p>
+<table>
+<thead>
+<tr>
+<th>Selling price</th>
+<th>Case1</th>
+<th>Case2</th>
+<th>Case3</th>
+<th>Case4</th>
+<th>Case5</th>
+<th>Case6</th>
+<th>Case7</th>
+<th>Case8</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>92.00 €</td>
+<td>139,360.00</td>
+<td>140,320.00</td>
+<td>141,280.00</td>
+<td>142,240.00</td>
+<td>143,200.00</td>
+<td>144,160.00</td>
+<td>145,120.00</td>
+<td>146,080.00</td>
+</tr>
+<tr>
+<td>92.40 €</td>
+<td>139,629.20</td>
+<td>140,535.20</td>
+<td>141,441.20</td>
+<td>142,347.20</td>
+<td>143,313.60</td>
+<td>144,219.60</td>
+<td>145,125.60</td>
+<td>146,031.60</td>
+</tr>
+<tr>
+<td>92.80 €</td>
+<td>139,872.00</td>
+<td>140,723.20</td>
+<td>141,635.20</td>
+<td>142,486.40</td>
+<td>143,398.40</td>
+<td>144,249.60</td>
+<td>145,100.80</td>
+<td>146,012.80</td>
+</tr>
+<tr>
+<td>93.20 €</td>
+<td>140,088.40</td>
+<td>140,945.20</td>
+<td>141,740.80</td>
+<td>142,597.60</td>
+<td>143,454.40</td>
+<td>144,250.00</td>
+<td>145,106.80</td>
+<td>145,902.40</td>
+</tr>
+<tr>
+<td>93.60 €</td>
+<td>140,278.40</td>
+<td>141,079.20</td>
+<td>141,880.00</td>
+<td>142,680.80</td>
+<td>143,481.60</td>
+<td>144,220.80</td>
+<td>145,021.60</td>
+<td>145,822.40</td>
+</tr>
+<tr>
+<td>94.00 €</td>
+<td>140,504.00</td>
+<td>141,248.00</td>
+<td>141,992.00</td>
+<td>142,736.00</td>
+<td>143,480.00</td>
+<td>144,224.00</td>
+<td>144,968.00</td>
+<td>145,712.00</td>
+</tr>
+<tr>
+<td>94.40 €</td>
+<td>140,641.60</td>
+<td>141,328.00</td>
+<td>142,014.40</td>
+<td>142,700.80</td>
+<td>143,449.60</td>
+<td>144,136.00</td>
+<td>144,822.40</td>
+<td>145,508.80</td>
+</tr>
+<tr>
+<td>94.80 €</td>
+<td>140,752.80</td>
+<td>141,380.80</td>
+<td>142,071.60</td>
+<td>142,699.60</td>
+<td>143,390.40</td>
+<td>144,018.40</td>
+<td>144,646.40</td>
+<td>145,337.20</td>
+</tr>
+<tr>
+<td>95.20 €</td>
+<td>140,837.60</td>
+<td>141,469.60</td>
+<td>142,038.40</td>
+<td>142,670.40</td>
+<td>143,302.40</td>
+<td>143,871.20</td>
+<td>144,503.20</td>
+<td>145,072.00</td>
+</tr>
+<tr>
+<td>95.60 €</td>
+<td>140,896.00</td>
+<td>141,468.40</td>
+<td>142,040.80</td>
+<td>142,613.20</td>
+<td>143,122.00</td>
+<td>143,694.40</td>
+<td>144,266.80</td>
+<td>144,839.20</td>
+</tr>
+<tr>
+<td>96.00 €</td>
+<td>140,928.00</td>
+<td>141,440.00</td>
+<td>141,952.00</td>
+<td>142,464.00</td>
+<td>142,976.00</td>
+<td>143,488.00</td>
+<td>144,000.00</td>
+<td>144,512.00</td>
+</tr>
+</tbody></table>
+<p>此时若对每一个case建立对应的名称，重复操作过多，则可以通过<strong>Define Name</strong>修改单元格的范围</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">选定C列(Case 1)对应数据，建立名称&quot;Case&quot;，自动生成的范围为$C$3:$C$13</span><br><span class="line">在Define Name中修改名称&quot;Case&quot;的范围，解除固定列</span><br><span class="line">新&quot;Case&quot;的范围为 &#x3D;Exercises!C$3:C$13</span><br><span class="line">在每个case的对应列，插入相同公式，即可计算最优价格</span><br><span class="line">&#x3D;INDEX(Selling_Price,MATCH(MAX(Case),Case,0))</span><br></pre></td></tr></table></figure>
             </div>
 
             <!-- Post Comments -->
@@ -224,8 +382,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/categories/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/categories/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2020/05/12/02Excel_Names/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2020/05/12/02Excel_Names/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 

@@ -158,11 +158,31 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >categories</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Master Excel(2) 数据排序 with Large/Small/Rank</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                
+                <h2 id="Contents-目录"><a href="#Contents-目录" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul>
+<li><a href="#用MAX（MIN）计算最大值（最小值）">最大值/最小值</a></li>
+<li><a href="#用Large（Small）计算最大X个值（最小X个值）">最大X个值/最小X个值</a></li>
+<li><a href="#用Rank进行排序">排序</a></li>
+<li><a href="#进阶玩法：编辑名称">进阶玩法：编辑名称</a></li>
+</ul>
+<h2 id="用MAX（MIN）计算最大值（最小值）"><a href="#用MAX（MIN）计算最大值（最小值）" class="headerlink" title="用MAX（MIN）计算最大值（最小值）"></a>用MAX（MIN）计算最大值（最小值）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MAX(range)</span><br><span class="line">MIN(range)</span><br></pre></td></tr></table></figure>
+
+<h2 id="用Large（Small）计算最大X个值（最小X个值）"><a href="#用Large（Small）计算最大X个值（最小X个值）" class="headerlink" title="用Large（Small）计算最大X个值（最小X个值）"></a>用Large（Small）计算最大X个值（最小X个值）</h2><p>如：第2大的值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LARGE(range,2)</span><br></pre></td></tr></table></figure>
+<p>利用row()和Column()显示数据自动化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LARGE(range,row(A1))</span><br></pre></td></tr></table></figure>
+<p>同理如：第2小的值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMALL(range,2)</span><br></pre></td></tr></table></figure>
+<p>利用row()和Column()显示数据自动化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMALL(range,row(A1))</span><br></pre></td></tr></table></figure>
+
+<h2 id="用Rank进行排序"><a href="#用Rank进行排序" class="headerlink" title="用Rank进行排序"></a>用Rank进行排序</h2><p>从大到小的Descending order：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Rank(range,0)</span><br></pre></td></tr></table></figure>
+<p>从小到大的Ascending order：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Rank(range,1)</span><br></pre></td></tr></table></figure>
             </div>
 
             <!-- Post Comments -->
@@ -224,8 +244,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/categories/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/categories/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2020/05/13/03Excel_Large/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2020/05/13/03Excel_Large/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
